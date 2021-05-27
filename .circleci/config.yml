@@ -22,8 +22,7 @@ jobs:
           name: contents
           command: ls ./build/libs/
       - store_artifacts:
-          path: /build/libs/ReUtils-1.0.0.jar
-          destination: libs
+          path: ./build/libs/
 
 workflows:
   # Below is the definition of your workflow.
