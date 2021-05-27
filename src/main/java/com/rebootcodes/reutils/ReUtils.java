@@ -6,12 +6,18 @@ public final class ReUtils extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+
+        // tell the console that the plugin had been enabled successfully
+        getServer().getConsoleSender().sendMessage("[ReUtils] §aPlugin has been enabled!");
 
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+
+        // Tell the console that the plugin has been disabled successfully
+        getServer().getConsoleSender().sendMessage("[ReUtils] §cPlugin has been disabled!");
+
     }
+
 }
