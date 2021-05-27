@@ -20,7 +20,7 @@ jobs:
           command: gradle jar
       - run:
           name: contents
-          command: ls
+          command: ls ./build/
       - store_artifacts:
           path: /build/libs/
           destination: libs
