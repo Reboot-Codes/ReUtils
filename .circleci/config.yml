@@ -17,7 +17,7 @@ jobs:
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
-          command: gradle clean build
+          command: gradle clean jar
 
 workflows:
   # Below is the definition of your workflow.
