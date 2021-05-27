@@ -1,0 +1,8 @@
+name: ReUtils
+version: @version@
+main: com.rebootcodes.reutils.ReUtils
+api-version: 1.16
+load: STARTUP
+authors: [ RebootCodes ]
+description: A general utility plugin for Minecraft servers.
+website: https://github.com/Reboot-Codes/ReUtils
