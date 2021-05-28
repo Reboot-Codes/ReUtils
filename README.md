@@ -6,7 +6,7 @@ A general utility plugin for Minecraft servers.
 
 > Uses the Spigot API because it's the first thing that worked, might switch to the Paper API if it works with the existing build.
 
-Supports **1.16.5**; however if you would like to use earlier versions you might be able to, but support isn't guaranteed.
+Supports **1.16.5**; however if you would like to use earlier versions you might be able to, but support isn't guaranteed. **1.17** support is planned, and will be updated if need be! Future version support is also planned. 😄
 
 This plugin is packaged to contain these modules:
 
