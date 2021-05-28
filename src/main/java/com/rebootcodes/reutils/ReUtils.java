@@ -20,7 +20,7 @@ public final class ReUtils extends JavaPlugin {
         GeneralCommands euGeneralCmdInstance = new GeneralCommands();
         PlayerCommands euPlayerCmdInstance = new PlayerCommands();
         Objects.requireNonNull(getCommand("ruversion")).setExecutor(euGeneralCmdInstance);
-        Objects.requireNonNull(getCommand("skull")).setExecutor(euPlayerCmdInstance);
+        Objects.requireNonNull(getCommand("playerskull")).setExecutor(euPlayerCmdInstance);
 
         // tell the console that the plugin had been enabled successfully
         getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.GREEN + "Plugin has been enabled!");

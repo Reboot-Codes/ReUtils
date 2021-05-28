@@ -12,6 +12,6 @@ commands:
   ruversion:
     description: A command to check the version of this plugin
     usage: /<command>
-  skull:
+  playerskull:
     description: Give the player a skull of themselves or of a specified player
     usage: /<command>

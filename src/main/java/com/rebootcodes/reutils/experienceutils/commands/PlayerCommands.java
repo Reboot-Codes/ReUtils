@@ -57,7 +57,7 @@ public class PlayerCommands implements CommandExecutor {
         Player player = ((Player) sender).getPlayer();
 
         // Give the player a specified skull
-        if (cmd.getName().equalsIgnoreCase("skull")) {
+        if (cmd.getName().equalsIgnoreCase("playerskull")) {
 
             assert player != null;
             if (args.length == 0) {
