@@ -6,3 +6,5 @@ load: STARTUP
 author: Reboot-Codes
 description: A general utility plugin for Minecraft servers.
 website: https://github.com/Reboot-Codes/ReUtils
+softdepend:
+  - Vault
