@@ -12,15 +12,10 @@ jobs:
     docker:
       - image: cimg/openjdk:11.0
     steps:
-      # Checkout the code as the first step.
       - checkout
-      # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
           command: gradle jar
-      - run:
-          name: contents
-          command: ls ./build/libs/
       - store_artifacts:
           path: ./build/libs/
 
