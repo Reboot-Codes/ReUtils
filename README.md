@@ -6,15 +6,20 @@ A general utility plugin for Minecraft servers.
 
 > Uses the Spigot API because it's the first thing that worked, might switch to the Paper API if it works with the existing build.
 
+Supports **1.16.5**; however if you would like to use earlier versions you might be able to, but support isn't guaranteed.
+
 This plugin is packaged to contain these modules:
 
 > Checks and crosses mark if a module is implemented in the current build or not (respectively). A mark does not indicate if the module is done or not however.
 
 - ✔ ExperienceUtils - A module to do basic things to make a player's experience better on your server (Homes, PlayerSkulls, DecorSkulls, etc)
 - ❌ FarmingUtils - A module to allow for easier public farms (MultiSummon, etc)
-- ❌ CommunityUtils - A module for managing player to player interactions (Friends, Public Warps, etc)
+- ❌ CommunityUtils - A module for managing player to player interactions (Friends, Public Warps, Mail, etc)
+- ❌ ShopUtils - A module for sign shops that integrate into a vault compatible economy plugin, dissabled if an economy plugin, or vault is not present at enable.
 
 ~~Modules can be configured in the `config.yml` in the `plugins/ReUtils` directory in the root of your server.~~ Not Ready _Yet_.
+
+This plugin has a _soft dependancy_ on [Vault](https://github.com/milkbowl/Vault) for extra features such as: a permisions manager integration, and shops. Go ahead and add that as a plugin too if you would like those integrations.
 
 ## Build it yourself
 
