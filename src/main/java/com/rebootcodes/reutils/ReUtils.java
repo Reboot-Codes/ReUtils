@@ -14,13 +14,7 @@ public final class ReUtils extends JavaPlugin {
     public void onEnable() {
 
         // Register stuff for the ExperienceUtils package
-        getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.AQUA + "Registering events for: ExperienceUtils");
-        getServer().getPluginManager().registerEvents(new Events(), this);
-        getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.AQUA + "Registering commands for: ExperienceUtils");
-        GeneralCommands euGeneralCmdInstance = new GeneralCommands();
-        PlayerCommands euPlayerCmdInstance = new PlayerCommands();
-        Objects.requireNonNull(getCommand("ruversion")).setExecutor(euGeneralCmdInstance);
-        Objects.requireNonNull(getCommand("playerskull")).setExecutor(euPlayerCmdInstance);
+        experienceUtilsRegistration();
 
         // tell the console that the plugin had been enabled successfully
         getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.GREEN + "Plugin has been enabled!");
@@ -32,6 +26,18 @@ public final class ReUtils extends JavaPlugin {
 
         // Tell the console that the plugin has been disabled successfully
         getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.RED + "Plugin has been disabled!");
+
+    }
+
+    void experienceUtilsRegistration () {
+
+        getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.AQUA + "Registering events for: ExperienceUtils");
+        getServer().getPluginManager().registerEvents(new Events(), this);
+        getServer().getConsoleSender().sendMessage("[ReUtils] " + ChatColor.AQUA + "Registering commands for: ExperienceUtils");
+        GeneralCommands euGeneralCmdInstance = new GeneralCommands();
+        PlayerCommands euPlayerCmdInstance = new PlayerCommands();
+        Objects.requireNonNull(getCommand("ruversion")).setExecutor(euGeneralCmdInstance);
+        Objects.requireNonNull(getCommand("playerskull")).setExecutor(euPlayerCmdInstance);
 
     }
 
